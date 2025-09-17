@@ -5,5 +5,5 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
-  base: '/tistamilani.github.io/',
+  base: '/tistamilani.github.io/'
 })
