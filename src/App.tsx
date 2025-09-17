@@ -18,7 +18,7 @@ function App() {
     }
 
     // Set the main favicon
-    setFavicon('./favicon.ico')
+    setFavicon('./assets/favicon.ico')
   }, [])
 
   return (
