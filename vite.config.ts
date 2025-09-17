@@ -7,5 +7,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/tistamilani.github.io/'
+  base: '/'
 })
