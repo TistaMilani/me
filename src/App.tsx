@@ -1,10 +1,24 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
-  // Favicon is now set in index.html for better GitHub Pages compatibility
+  // Set favicon dynamically
+  useEffect(() => {
+    const setFavicon = (href: string) => {
+      let link = document.querySelector("link[rel*='icon']") as HTMLLinkElement
+      if (!link) {
+        link = document.createElement('link')
+        link.type = 'image/x-icon'
+        link.rel = 'shortcut icon'
+        document.getElementsByTagName('head')[0].appendChild(link)
+      }
+      link.href = href
+    }
+
+    setFavicon('/favicon.ico')
+  }, [])
 
   return (
     <>
