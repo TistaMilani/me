@@ -1,5 +1,6 @@
 import './App.css'
 import Navbar from './components/Navbar'
+import MainPage from './components/main-page'
 import { useEffect, useState } from 'react'
 
 type Theme = 'light' | 'dark'
@@ -26,8 +27,8 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar theme={theme} onToggleTheme={toggleTheme} />
-      <div className="flex flex-1 items-center justify-center">
-        <h1 className="text-2xl font-bold">WIP</h1>
+      <div className="flex-1">
+        <MainPage />
       </div>
     </div>
   )

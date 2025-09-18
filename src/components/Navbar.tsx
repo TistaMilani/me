@@ -26,7 +26,7 @@ export default function Navbar({ theme = 'dark', onToggleTheme }: NavbarProps) {
     const navBorder = theme === 'dark' ? 'border-white/10' : 'border-black/10'
 
     return (
-        <nav className={`sticky top-0 z-50 w-full border-b ${navBorder}`}>
+        <nav className={`sticky top-0 z-50 w-full bg-[var(--bg)] border-b ${navBorder}`}>
             <div className="mx-auto w-full max-w-6xl px-4 py-2 md:py-3 flex flex-col sm:flex-row sm:h-16 items-start sm:items-center justify-between gap-2 md:gap-3">
                 <div className="py-2">
                     <h1 className={`text-xl md:text-2xl font-semibold ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
