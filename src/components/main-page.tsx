@@ -23,42 +23,42 @@ export default function MainPage() {
                 
                 <h5 className="text-sm font-semibold mt-3 mb-1">Programming Languages</h5>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">C</span>
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">Python</span>
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">OCaml</span>
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">Java</span>
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">JavaScript</span>
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">TypeScript</span>
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">Solidity</span>
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">SQL</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">C</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">Python</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">OCaml</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">Java</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">JavaScript</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">TypeScript</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">Solidity</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">SQL</span>
                 </div>
 
                 <h5 className="text-sm font-semibold mt-3 mb-1">Technical Skills</h5>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">Problem Solving</span>
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">Web Development (Flask, Django, HTML, CSS, Node, React)</span>
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">Formal Verification</span>
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">Database Design</span>
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">Memory Management & Systems Programming</span>
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">Human–Computer Interaction (UX, UI)</span>
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">Teamwork & Agile Methodologies</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">Problem Solving</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">Web Development (Flask, Django, HTML, CSS, Node, React)</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">Formal Verification</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">Database Design</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">Memory Management & Systems Programming</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">Human–Computer Interaction (UX, UI)</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">Teamwork & Agile Methodologies</span>
                 </div>
 
                 <h5 className="text-sm font-semibold mt-3 mb-1">Security & Hacking</h5>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">Cybersecurity</span>
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">CTF</span>
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">OSINT</span>
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">Misc</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">Cybersecurity</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">CTF</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">OSINT</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">Misc</span>
                 </div>
 
                 <h5 className="text-sm font-semibold mt-3 mb-1">Hobbies</h5>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">Chess</span>
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">Card Games</span>
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">Videogames</span>
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">Biking</span>
-                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-gray-700">Drawing</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">Chess</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">Card Games</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">Videogames</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">Biking</span>
+                  <span className="px-2 py-1 text-xs rounded border border-gray-300 text-[#D5D5D5]-700">Drawing</span>
                 </div>
               </div>
 
