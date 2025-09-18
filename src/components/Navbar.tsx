@@ -1,8 +1,9 @@
+/*
 type SocialLink = {
     label: string
     href: string
 }
-/*
+
 const socialLinks: SocialLink[] = [
     { label: 'GitHub', href: '#' },
     { label: 'LinkedIn', href: '#' },
