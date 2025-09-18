@@ -32,6 +32,10 @@ export default function Footer({ theme = 'dark' }: FooterProps) {
               <img src="/lichess.png" alt="Lichess" className={`h-4 w-4 object-contain ${iconFilter}`} />
               <a href="https://lichess.org/@/TistaMilani" target="_blank" rel="noopener noreferrer" className="hover:underline">Lichess</a>
             </li>
+            <li className="flex items-center gap-2">
+              <img src="/chesscom.png" alt="Lichess" className={`h-4 w-4 object-contain ${iconFilter}`} />
+              <a href="https://chess.com/member/tistamilani" target="_blank" rel="noopener noreferrer" className="hover:underline">Chess.com</a>
+            </li>
           </ul>
         </div>
 

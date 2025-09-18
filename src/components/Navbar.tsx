@@ -11,6 +11,7 @@ const socialLinks: SocialLink[] = [
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/francesco-rocchiccioli', path: "/linkedin.png" },
     { label: 'Instagram', href: 'https://www.instagram.com/tista.milani', path: "/instagram.png" },
     { label: 'Lichess', href: 'https://lichess.org/@/TistaMilani', path: "/lichess.png" },
+    { label: 'Chess.com', href: 'https://www.chess.com/member/tistamilani', path: "/chesscom.png" },
 ]
 
 type Theme = 'light' | 'dark'
@@ -29,15 +30,25 @@ export default function Navbar({ theme = 'dark', onToggleTheme }: NavbarProps) {
 
     return (
         <nav className={`sticky top-0 z-50 w-full bg-[var(--bg)] border-b ${navBorder}`}>
-            <div className="mx-auto w-full max-w-6xl px-4 py-2 md:py-3 flex flex-col sm:flex-row sm:h-16 items-start sm:items-center justify-between gap-2 md:gap-3">
-            <div className="py-2">
-                <h1 className={`text-xl md:text-2xl font-bold ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
-                    TistaMilani
-                </h1>
-                <p className={`text-sm md:text-base font-medium ${theme === 'dark' ? 'text-slate-400' : 'text-slate-600'}`}>
-                    aka: Francesco Rocchiccioli
-                </p>
-            </div>
+            <div className="mx-auto my-4 w-full max-w-6xl px-4 py-2 md:py-3 flex flex-col sm:flex-row sm:h-16 items-start sm:items-center justify-between gap-2 md:gap-3">
+            
+                <div className="flex items-center gap-3 py-2">
+                    <img 
+                        src="/propic.jpg" 
+                        alt="Profile" 
+                        className="w-16 h-16 rounded object-cover" 
+                    />
+
+                    {/* Text content */}
+                    <div>
+                        <h1 className={`text-xl md:text-2xl font-bold ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
+                            TistaMilani
+                        </h1>
+                        <p className={`text-sm md:text-base font-medium ${theme === 'dark' ? 'text-slate-400' : 'text-slate-600'}`}>
+                            aka: Francesco Rocchiccioli
+                        </p>
+                    </div>
+                </div>
 
                 <div className="flex items-center gap-1 md:gap-2">
                     {socialLinks.map((link) => (
@@ -93,7 +104,6 @@ export default function Navbar({ theme = 'dark', onToggleTheme }: NavbarProps) {
                 </div>
 
             </div>
-            
         </nav>
     )
 }
