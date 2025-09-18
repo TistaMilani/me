@@ -8,7 +8,9 @@ type SocialLink = {
 
 const socialLinks: SocialLink[] = [
     { label: 'GitHub', href: 'https://github.com/TistaMilani', path: "/github.png" },
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/francesco-rocchiccioli', path: "/linkedin.png" }
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/francesco-rocchiccioli', path: "/linkedin.png" },
+    { label: 'Instagram', href: 'https://www.instagram.com/tista.milani', path: "/instagram.png" },
+    { label: 'Lichess', href: 'https://lichess.org/@/TistaMilani', path: "/lichess.png" },
 ]
 
 type Theme = 'light' | 'dark'
@@ -28,11 +30,14 @@ export default function Navbar({ theme = 'dark', onToggleTheme }: NavbarProps) {
     return (
         <nav className={`sticky top-0 z-50 w-full bg-[var(--bg)] border-b ${navBorder}`}>
             <div className="mx-auto w-full max-w-6xl px-4 py-2 md:py-3 flex flex-col sm:flex-row sm:h-16 items-start sm:items-center justify-between gap-2 md:gap-3">
-                <div className="py-2">
-                    <h1 className={`text-xl md:text-2xl font-semibold ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
-                        Francesco Rocchiccioli
-                    </h1>
-                </div>
+            <div className="py-2">
+                <h1 className={`text-xl md:text-2xl font-bold ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
+                    TistaMilani
+                </h1>
+                <p className={`text-sm md:text-base font-medium ${theme === 'dark' ? 'text-slate-400' : 'text-slate-600'}`}>
+                    aka: Francesco Rocchiccioli
+                </p>
+            </div>
 
                 <div className="flex items-center gap-1 md:gap-2">
                     {socialLinks.map((link) => (
@@ -41,10 +46,10 @@ export default function Navbar({ theme = 'dark', onToggleTheme }: NavbarProps) {
                             href={link.href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={`inline-flex items-center rounded-md p-2 md:p-3 transition focus:outline-none focus:ring-2 ${hoverRing}`}
+                            className={`inline-flex items-center rounded-md p-2 shrink-0 transition focus:outline-none focus:ring-2 ${hoverRing}`}
                             aria-label={link.label}
                         >
-                            <img src={link.path} alt={link.label} className={`h-6 w-6 md:h-7 md:w-7 ${iconFilter}`} />
+                            <img src={link.path} alt={link.label} className={`h-6 w-6 object-contain shrink-0 ${iconFilter}`} />
                         </a>
                     ))}
 

@@ -1,6 +1,7 @@
 import './App.css'
 import Navbar from './components/Navbar'
 import MainPage from './components/main-page'
+import Footer from './components/Footer'
 import { useEffect, useState } from 'react'
 
 type Theme = 'light' | 'dark'
@@ -30,6 +31,7 @@ function App() {
       <div className="flex-1">
         <MainPage />
       </div>
+      <Footer theme={theme} />
     </div>
   )
 }
