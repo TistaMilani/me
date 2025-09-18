@@ -1,21 +1,15 @@
-import { useState } from 'react'
 import './App.css'
+import Navbar from './components/Navbar'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <h1>Vite + React + TS & Tilescale</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <div className="flex-1">
+        <h1 className="text-2xl font-bold text-600">WIP</h1>
       </div>
-    </>
+    </div>
   )
 }
 
